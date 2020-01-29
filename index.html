@@ -1,0 +1,279 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CEF Construction</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./static/styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="./static/styles/aboutUs.css" />
+    <link rel="stylesheet" type="text/css" href="./static/styles/works.css" />
+    <link rel="stylesheet" type="text/css" href="./static/styles/help.css" />
+    <link rel="stylesheet" type="text/css" href="./static/styles/footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./static/styles/copyright.css"
+    />
+  </head>
+  <body>
+    <div>
+      <!-- ------------------------ -->
+      <div id="mySidenav" class="sidenav hide">
+        <p id="active">Home</p>
+        <p>Who we are</p>
+        <p>What we do</p>
+        <p>Contact us</p>
+      </div>
+      <!-- ------------------------ -->
+      <!-- Header -->
+      <div class="header">
+        <div class="navigation">
+          <div class="navigation-logo">
+            <p>CEF Construction</p>
+          </div>
+          <div class="navigation-items">
+            <span id="iconContainer">
+              <span
+                id="hum-icon"
+                style="font-size:30px;"
+                onclick="togleNavBar()"
+              >
+                &#9776;
+              </span>
+              <span
+                id="close-button"
+                class="closebtn hide"
+                style="font-size:30px;cursor:pointer;color:yellow"
+                onclick="closeNav()"
+                >&times;</span
+              >
+            </span>
+            <ul>
+              <li class="active"><p>Home</p></li>
+              <li><p>Who we are</p></li>
+              <li><p>What we do</p></li>
+              <li><p>Contact us</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mission-bar">
+          <div class="mission-bar-values">
+            <p>Quality. Safety.</p>
+          </div>
+          <div class="mission-bar-values">
+            <p>Reliability</p>
+          </div>
+          <div class="mission-bar-statement">
+            <p>
+              When you need your construction project completed in time and on
+              budget, call CEF Construction
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Side Navigation -->
+
+      <!-- About us -->
+      <div class="about-us">
+        <div class="tint">
+          <div class="about-us-container">
+            <div class="about-title">
+              <p>Who we are</p>
+            </div>
+            <div class="about-content">
+              <p>
+                For over a decade, <strong>CEF Construction</strong> has
+                provided high-standard construction and restoration services to
+                clients in the <span>Greater Houston</span> area and all along
+                the <strong>Texas</strong> and <strong>Louisiana</strong> Gulf
+                Coast region. As a small construction company that is
+                <strong>majority woman-owned, </strong> we take pride in how far
+                we've come and the lasting client relationships we've developed.
+                By meeting and exceeding expectations, we've built an industry
+                reputation founded on safety, quality and dependability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- What we do -->
+      <div class="our-work">
+        <div class="work-header">
+          <p>What we do</p>
+        </div>
+        <div class="work-content">
+          <div class="work-content-item">
+            <span>Concrete Restoration</span>
+            <p>
+              Secure your structure with our concrete relation services. From
+              surface renovation to full scale structural restoration, we can
+              repair and restor your concrete building and structures so they're
+              just like new again.
+            </p>
+          </div>
+          <div class="work-content-item">
+            <span>New Construction</span>
+            <p>
+              Build a structural foundation that lasts with our turnkey
+              construction services. starting with initial planning and ite prep
+              all the way through management to completion, we'll care for
+              everything so you don't have to.
+            </p>
+          </div>
+          <div class="work-content-item">
+            <span>Historical Restoration</span>
+            <p>
+              Certain buildings may require specialized attention during
+              restoration in order to preserve history while still improving
+              foundational integrity. With our focus on quality and precision,
+              count CEF to restore your structure to ots former glory.
+            </p>
+          </div>
+          <div class="work-content-item">
+            <span>Site Maintenance</span>
+            <p>
+              With regular site maintenance, you can avoid costly total
+              restorations and extend the life of your concrete. Our team will
+              perform routine maintenance and repairs to keep your structure in
+              optimal condition.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Help -->
+      <div class="help">
+        <div class="help-details">
+          <div class="help-details-header">
+            <div class="help-details-header-item">
+              <p>How can we</p>
+              <p>help you?</p>
+            </div>
+          </div>
+          <div class="help-details-content">
+            <p>
+              Lets start a little conversation. Tell us a little about your
+              project and a CEF representative will reach out to discuss how we
+              can meet your project needs.
+            </p>
+          </div>
+          <div class="help-details-contact">
+            <div class="details-contact-header">
+              <p>Contact Us</p>
+            </div>
+            <div class="address">
+              <p class="address-headers">ADDRESS</p>
+              <p>9248 Winkler Drive</p>
+              <p>Huston TX 77990</p>
+            </div>
+            <div class="phone">
+              <p class="address-headers">PHONE</p>
+              <p>(283)-7462812837</p>
+            </div>
+          </div>
+        </div>
+        <div class="help-form">
+          <div class="help-form-container">
+            <form>
+              <div class="input-item">
+                <p>First Name</p>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="input-item">
+                <p for="lname">Last Name</p>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="input-item">
+                <p for="email">Email</p>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="input-item">
+                <p for="pnum">Phone Number</p>
+                <input
+                  type="number"
+                  id="pnum"
+                  name="lastname"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div class="input-item-company">
+                <p for="company">Company Name</p>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company Name"
+                />
+              </div>
+              <div class="input-item-company">
+                <p for="company">Message</p>
+                <textarea
+                  placeholder="Message..."
+                  cols="30"
+                  rows="7"
+                ></textarea>
+              </div>
+              <button>SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="navigate">
+          <p class="footer-header">NAVIGATE</p>
+          <p class="footer-components">Home</p>
+          <p class="footer-components">Who we are</p>
+          <p class="footer-components">What we do</p>
+        </div>
+        <div class="contact-us">
+          <p class="footer-header">CONTACT US</p>
+          <p>9248 Winkler Drive</p>
+          <p>Huston TX 77990</p>
+        </div>
+        <div class="number">
+          <p>(283)-7462812837</p>
+        </div>
+        <div class="message">
+          <p>Send us a message</p>
+        </div>
+        <div class="women-logo">
+          <img src="./static//assets//women-owned.png" alt="women-logo" />
+        </div>
+      </div>
+      <div class="copywright">
+        <p>
+          &copy; CEF Construction<span></span>Custom web design by Big Spalsh
+          Web Design
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./static/javascript/sideNavigation.js"></script>
+</html>

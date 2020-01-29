@@ -1,0 +1,163 @@
+.help {
+  background-image: url("../assets/ContactUs.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 750px; */
+  display: flex;
+  flex-direction: row;
+}
+.help-details {
+  padding: 0 5% 0 6%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.help-details-header {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  height: 45%;
+  color: yellow;
+  height: 33%;
+}
+.help-details-header p {
+  line-height: 0;
+}
+.help-details-header-item {
+  margin-top: 23%;
+}
+.help-details-content {
+  border-top: 1px solid #ffff003d;
+  height: 15%;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 17px;
+}
+
+.help-details-contact {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.details-contact-header {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 0;
+  color: white;
+}
+.address,
+.phone {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  width: 22%;
+  font-size: 13px;
+  color: white;
+  line-height: 0.7;
+}
+.address-headers {
+  color: yellow;
+  font-weight: 100;
+}
+/* form */
+.help-form {
+  width: 50%;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  padding: 9px 15px;
+  display: inline-block;
+  border: 0;
+  box-sizing: border-box;
+}
+.help-form-container {
+  width: 85%;
+  height: 100%;
+  margin-top: 115px;
+  padding-top: 70px;
+  background: #2b1f1f;
+}
+
+.help-form-container form {
+  display: flex;
+  padding-bottom: 12%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.help-form-container p {
+  font-family: "Open Sans", sans-serif;
+  color: yellow;
+  line-height: 0;
+  font-size: 12px;
+}
+.input-item {
+  width: 43%;
+  padding: 2% 1%;
+}
+.input-item-company {
+  margin-top: 3%;
+  width: 88%;
+}
+.input-item-company input,
+.input-item-company textarea {
+  width: 100%;
+}
+.input-item-company textarea {
+  font-family: "Open Sans", sans-serif;
+  padding: 1% 3%;
+}
+button {
+  margin-top: 10%;
+  border: 0;
+  padding: 2% 10%;
+  background: yellow;
+  font-weight: 600;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  .help {
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+  .help-form-container {
+    padding-bottom: 6%;
+    margin-top: 1%;
+    width: 100%;
+  }
+  .help-form {
+    width: 100%;
+  }
+  .help-details {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .help-details-header {
+    height: 55%;
+  }
+  .help-details-header-item {
+    margin-top: 0;
+  }
+  .help-details-content {
+    height: 30%;
+  }
+  .help-details-contact {
+    flex-direction: row;
+  }
+  .address,
+  .phone {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .address, .phone {
+    line-height: 1.7;
+  }
+  .help-form-container {
+    width: 100%;
+  }
+}

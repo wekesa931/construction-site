@@ -1,0 +1,60 @@
+.footer {
+  /* height: 165px; */
+  background: #484141;
+  display: flex;
+  flex-direction: row;
+}
+.navigate,
+.contact-us,
+.number,
+.message {
+  width: 15%;
+  padding: 2% 0 0 7%;
+  color: white;
+  line-height: 0;
+}
+.footer-header {
+  font-family: "Open Sans", sans-serif;
+  color: yellow;
+  line-height: 0;
+  font-size: 12px;
+}
+.footer p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 11px;
+  font-weight: 100;
+}
+.women-logo {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+.women-logo img {
+  max-width: 65%;
+}
+.number, .message {
+  padding-top: 4%;
+}
+@media only screen and (max-width: 700px) {
+  .footer {
+    padding-bottom: 6%;
+    flex-direction: column;
+  }
+  .footer p {
+    line-height: 1;
+    font-size: 17px;
+  }
+  .women-logo {
+    margin-top: 5%;
+  }
+  .navigate,
+  .contact-us,
+  .number,
+  .message,
+  .women-logo {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

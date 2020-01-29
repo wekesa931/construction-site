@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#iconContainer {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.header {
+  background-image: url("../assets/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.navigation {
+  color: white;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+}
+.navigation-logo {
+  height: 100%;
+  width: 40%;
+}
+
+.navigation-logo p {
+  font-size: 25px;
+  margin-left: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.navigation-items {
+  padding-top: 20px;
+  height: 100%;
+  width: 60%;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin: 0 10% 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+  margin-right: 3vw;
+}
+li p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.active {
+  border-bottom: 1px solid yellow;
+}
+
+/* Mission Bar */
+
+.mission-bar {
+  overflow: hidden;
+  background: #2b1f1f;
+  padding: 0 5%;
+  height: 43%;
+  margin-top: 150px;
+  width: 35%;
+  color: white;
+}
+.mission-bar-values {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 65px;
+  line-height: 0.3;
+  color: yellow;
+}
+.mission-bar-statement p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 100px) {
+  ul {
+    display: none;
+  }
+  #iconContainer {
+    display: block;
+  }
+  #hum-icon {
+    cursor: pointer;
+    color: yellow;
+  }
+  .navigation-items {
+    padding-top: 30px;
+    width: 20%;
+  }
+  .navigation-logo {
+    width: 80%;
+  }
+  .mission-bar {
+    background: #2b1f1fc7;
+    width: 100%;
+    padding: 0;
+  }
+  .mission-bar-values,
+  .mission-bar-statement {
+    margin-left: 4%;
+  }
+  .navigation {
+    background-color: #111;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 80;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.closebtn {
+  cursor: pointer;
+  color: white;
+}
+#mySidenav {
+  width: 60%;
+  box-shadow: -300px 0px 0px 0px #111111b8;
+}
+#mySidenav p {
+  cursor: pointer;
+  color: #afa8a8;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 10%;
+  font-size: 22px;
+}
+#mySidenav #active {
+  color: white;
+}
+#mySidenav p:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1280px) {
+  .mission-bar {
+    min-width: 55%;
+  }
+}
+

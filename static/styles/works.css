@@ -1,0 +1,68 @@
+.our-work {
+  background-image: url("../assets/WhatWeDo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 940px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+.work-header {
+  border-bottom: 2px solid #ffff0012;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: yellow;
+  height: 30%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.work-header p {
+  position: absolute;
+  top: 40%;
+}
+/* What we do break down */
+.work-content {
+  padding: 0 0 0 5%;
+  height: 50%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-content-item {
+  padding-right: 6%;
+  width: 43%;
+}
+.work-content-item span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+}
+.work-content-item p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+}
+@media only screen and (max-width: 700px) {
+  .work-header {
+    height: 15%;
+  }
+  .work-header p {
+    top: 0;
+  }
+  .work-content-item {
+    width: 90%;
+  }
+  .our-work {
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .work-header {
+    height: 18%;
+  }
+  .work-header p {
+    top: 20;
+  }
+}
+
